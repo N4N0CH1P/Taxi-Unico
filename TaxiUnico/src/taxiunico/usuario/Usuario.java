@@ -22,8 +22,8 @@ public abstract class Usuario extends Object{
     protected int celular;
     private String mail;
     private char status;
-    public int calificacionTotal;
-    public int numViajes;
+    protected int calificacionTotal;
+    protected int numViajes;
 
     // Constructor con parametros
 
