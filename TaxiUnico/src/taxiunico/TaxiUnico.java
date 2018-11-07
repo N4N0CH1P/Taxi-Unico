@@ -61,8 +61,8 @@ public class TaxiUnico extends Application {
       areaBotones.getChildren().addAll(re, li, lo);
        
         Tapp.setTop(idBox);
-        Tapp.setTop(passBox);
-        Tapp.setCenter(areaBotones);
+        Tapp.setCenter(passBox);
+        Tapp.setBottom(areaBotones);
         
         
         Button btn = new Button();
@@ -82,7 +82,7 @@ public class TaxiUnico extends Application {
         StackPane root = new StackPane();
         root.getChildren().add(btn);
         
-        Scene scene = new Scene(root, 300, 250);
+        Scene scene = new Scene(Tapp, 480, 320);
         
         primaryStage.setTitle("Transpaís Taxi");
         primaryStage.setScene(scene);
