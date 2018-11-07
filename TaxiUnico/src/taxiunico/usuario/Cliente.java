@@ -10,9 +10,9 @@ package taxiunico.usuario;
  * @author gabrielcarrion
  */
 public class Cliente extends Usuario {
-    
-  
-    
+    /*
+    * atributo unico del cliente
+    */
     private int card;
 
     public Cliente(int id, String nombre, String passwd, String ubicacionActual, int celular, String mail, char status, int calificacionTotal, int numViajes) {

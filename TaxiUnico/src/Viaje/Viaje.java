@@ -25,6 +25,15 @@ public class Viaje {
     private List<Cliente> clienteList= new ArrayList<Cliente>();   
     private int pasajeros;
 
+    /**
+     *
+     * @param costo de la carrera
+     * @param distancia del viaje
+     * @param origen de partida
+     * @param destino a donde 
+     * @param autoDesignado del conductor
+     * @param pasajeros cantidad de pasajeros en el auto
+     */
     public Viaje(double costo, double distancia, Ubicacion origen, Ubicacion destino, Automovil autoDesignado, int pasajeros) {
         this.costo = costo;
         this.distancia = distancia;
@@ -33,7 +42,9 @@ public class Viaje {
         this.autoDesignado = autoDesignado;
         this.pasajeros = pasajeros;
     }
-
+    /**
+    * metodos de la clase
+     */
     public double getCosto() {
         return costo;
     }

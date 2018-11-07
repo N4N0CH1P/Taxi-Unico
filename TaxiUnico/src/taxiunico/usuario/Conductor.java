@@ -24,6 +24,22 @@ public class Conductor extends Usuario{
     private Automovil autoAsignado;
     public Ubicacion destino;
 
+    /**
+     *
+     * @param rfc o licencia de conducir del conductor
+     * @param autoAsignado unico del usuario (conductor)
+     * @param destino al que se dirige
+     * atributos heredados de Usuario
+     * @param id
+     * @param nombre
+     * @param passwd
+     * @param ubicacionActual
+     * @param celular
+     * @param mail
+     * @param status
+     * @param calificacionTotal
+     * @param numViajes
+     */
     public Conductor(int rfc, Automovil autoAsignado, Ubicacion destino, int id, String nombre, String passwd, String ubicacionActual, int celular, String mail, char status, int calificacionTotal, int numViajes) {
         super(id, nombre, passwd, ubicacionActual, celular, mail, status, calificacionTotal, numViajes);
         this.rfc = rfc;

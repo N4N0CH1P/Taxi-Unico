@@ -15,9 +15,13 @@ import taxiunico.Automovil.Automovil;
  */
 public class Administrador extends Usuario {
     
+ 
     public Administrador(int id, String nombre, String passwd, String ubicacionActual, int celular, String mail, char status, int calificacionTotal, int numViajes) {
         super(id, nombre, passwd, ubicacionActual, celular, mail, status, calificacionTotal, numViajes);
     }
+    /* 
+    Atributos del administrador
+    */
     private List<Automovil> autoList= new ArrayList<Automovil>(); 
     private List<Conductor> conducList= new ArrayList<Conductor>(); 
     private List<Cliente> clientList= new ArrayList<Cliente>(); 

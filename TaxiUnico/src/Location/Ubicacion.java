@@ -11,13 +11,32 @@ package Location;
  */
 public class Ubicacion {
     
+    
     public String calle;
+
     public String colonia ;
+
+  
     public int numero ;
+
+  
     public String ciudad;
+
+    
     public String estado;
+
     public int CP ;
-// Constructor con parametros
+
+
+    /**
+     *
+     * @param calle hacia donde se va
+     * @param colonia sector
+     * @param numero exterior
+     * @param ciudad 
+     * @param estado de la Republica
+     * @param CP codigo postal
+     */
     public Ubicacion(String calle, String colonia, int numero, String ciudad, String estado, int CP) {
         this.calle = calle;
         this.colonia = colonia;

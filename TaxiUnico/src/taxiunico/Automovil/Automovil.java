@@ -18,6 +18,17 @@ public class Automovil {
     private int numPasajeros;
     private boolean empresa;
 // Constructor con parametros
+
+    /**
+     *
+     * @param marca 
+     * @param modelo 
+     * @param color
+     * @param anio 
+     * @param numPasajeros 
+     * atributos del vehiculo
+     * @param empresa indica si el auto pertenece a la empresa o no
+     */
     public Automovil(String marca, String modelo, String color, int anio, int numPasajeros, boolean empresa) {
         this.marca = marca;
         this.modelo = modelo;

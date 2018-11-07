@@ -15,17 +15,60 @@ import Location.Ubicacion;
 
 
 public abstract class Usuario extends Object{
-    protected int id; // id unico al usuario
+
+    /**
+     * unico usuario
+     */
+    protected int id; 
+
+    /**
+     * nombre 
+     */
     protected String nombre;
+
+    /**
+     * apellido
+     */
     protected String passwd;
+
+    /**
+     * ubicacion actual 
+     */
     protected String ubicacionActual;
+
+    /**
+     *mail de registro
+     * celular del usuario
+     * status actual del usuario
+     */
     protected int celular;
     private String mail;
     private char status;
+
+    /**
+     * calificacion del usuario
+     */
     protected int calificacionTotal;
+
+    /**
+     * cantidad de viajes del usuario
+     */
     protected int numViajes;
 
     // Constructor con parametros
+
+    /**
+     *
+     * @param id unico del usuario
+     * @param nombre del usuario
+     * @param passwd contraseña para autenticar
+     * @param ubicacionActual del usuario
+     * @param celular para contacto
+     * @param mail mail de registro aplicacion
+     * @param status disponibilidad del usuario
+     * @param calificacionTotal del usuario de la aplicacion
+     * @param numViajes del usuario
+     */
 
     public Usuario(int id, String nombre, String passwd, String ubicacionActual, int celular, String mail, char status, int calificacionTotal, int numViajes) {
         this.id = id;
@@ -43,7 +86,10 @@ public abstract class Usuario extends Object{
         this.status = status;
     }
    
-
+    /*
+    * setters  para las variables
+    
+    */
     public void setId(int id) {
         this.id = id;
     }
@@ -75,7 +121,10 @@ public abstract class Usuario extends Object{
     public void setNumViajes(int numViajes) {
         this.numViajes = numViajes;
     }
-
+    /*
+    * getters de las variables
+    *
+    */
     public int getId() {
         return id;
     }
